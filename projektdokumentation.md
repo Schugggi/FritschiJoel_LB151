@@ -91,6 +91,6 @@
 
 # 10 Allgemeines
 
-- [ ] Ich habe die Rechtschreibung überprüft
+- [ X ] Ich habe die Rechtschreibung überprüft
 - [ ] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
 - [ ] Ich habe alle mit ✍️ markierten Teile ersetzt
