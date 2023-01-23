@@ -49,7 +49,11 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über den
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
 | 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-|2|Muss|Funktional|Als ein Spieler des Glücksspiels möchte ich meinen Highscore sehen.|
+|2|Muss|Funktional|Als ein Spieler des Glücksspiels möchte ich meinen Highscore sehen, damit ich mich mit anderen Usern vergleichen kann|
+|3|Muss|Funktional|Als Admin möchte ich Phrasen erstellen, ändern und löschen können, damit ich den Inhalt der App bearbeiten kann.|
+|4|Muss|Funktional|Als Spieler möchte ich Wörter und Fragen beantworten können, damit ich spielen kann.|
+|5|Muss|Funktional|Als Administrator möchte ich mich durch meinen Benutzernamen und mein Passwort authentifizieren können, damit ich auf die Administrator-Funktionen zugreifen kann.|
+|6|Muss|Funktional|Als Administrator möchte ich einzelne Einträge der Highscore-Liste löschen können, damit ich die Highscore-Liste aktuell halten und ungültige Einträge entfernen kann.|
 | ...  |                 |      |                                    |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
