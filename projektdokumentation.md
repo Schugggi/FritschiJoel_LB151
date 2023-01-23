@@ -63,6 +63,8 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über den
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
 | 1.1  |              |         |                   |
+|2.1|Applikation muss gestartet sein, ein Spiel gespielt und gewonnen| - | Highscore kann angeschaut werden|
+|3.1|Applikation gestartet, als Admin angemeldet| Phrase ändern| Phrase wurde geändert.|
 | ...  |              |         |                   |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
