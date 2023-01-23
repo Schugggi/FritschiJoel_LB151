@@ -14,24 +14,31 @@
 
 # 0 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+✍️ Spielen Sie eine Glücksrad-Webapplikation, bei dem Sie Wörter oder Redewendungen in einem Gitter erraten müssen, während Sie versuchen, möglichst hohe Geldbeträge zu gewinnen.
 
 # 1 Analyse
 
 ✍️ Beschreiben Sie, auf welchem Tier Sie die dynamischen Elemente der Anwendung unterbringen möchten:
 
-* Tier 1 (Presentation): ...
-* Tier 2 (Webserver):
-* Tier 3 (Application Server):
-* Tier 4 (Dataserver):
+* Tier 1 (Presentation): Glücksrad darstellen
+* Tier 2 (Webserver): Eingaben überprüfen
+* Tier 3 (Application Server): Funktionen der Glücksrades, auswertung.
+* Tier 4 (Dataserver): highscore speichern; Phrasen und Rätselwörter anlegen, ändern und löschen.
 
 # 2 Technologie
 
 ✍️ Beschreiben Sie für dieselben Tiers, welche Programmiersprache bzw. Technologie Sie verwenden möchten.
 
+* Tier 1 (Presentation): Next.js, HTML, CSS
+* Tier 2 (Webserver): Next.js
+* Tier 3 (Application Server): Next.js 
+* Tier 4 (Dataserver): firestore
+
 # 3 Datenbank
 
 ✍️ Wie steuern Sie Ihre Datenbank an? Wie ist das Interface aufgebaut? 
+
+Da ich als Datenkbank Firestore verwende, greiffe ich über den 
 
 # 4.1 User Stories
 
@@ -42,6 +49,7 @@
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
 | 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
+|2|Muss|Funktional|Als ein Spieler des Glücksspiels möchte ich meinen Highscore sehen.|
 | ...  |                 |      |                                    |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
