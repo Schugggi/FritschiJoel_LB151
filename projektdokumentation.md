@@ -5,7 +5,7 @@
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
 |       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
-|       | 0.0.2   |                                                              |
+|05.02.2023| 1.0.0   |  Projekt erstellen und hochladen, ausbauen von Projektdokumentation|
 |       | 0.0.3   |                                                              |
 |       | 0.0.4   |                                                              |
 |       | 0.0.5   |                                                              |
@@ -48,12 +48,11 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über den
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-|2|Muss|Funktional|Als ein Spieler des Glücksspiels möchte ich meinen Highscore sehen, damit ich mich mit anderen Usern vergleichen kann|
-|3|Muss|Funktional|Als Admin möchte ich Phrasen erstellen, ändern und löschen können, damit ich den Inhalt der App bearbeiten kann.|
-|4|Muss|Funktional|Als Spieler möchte ich Wörter und Fragen beantworten können, damit ich spielen kann.|
-|5|Muss|Funktional|Als Administrator möchte ich mich durch meinen Benutzernamen und mein Passwort authentifizieren können, damit ich auf die Administrator-Funktionen zugreifen kann.|
-|6|Muss|Funktional|Als Administrator möchte ich einzelne Einträge der Highscore-Liste löschen können, damit ich die Highscore-Liste aktuell halten und ungültige Einträge entfernen kann.|
+|1|Muss|Funktional|Als ein Spieler des Glücksspiels möchte ich meinen Highscore sehen, damit ich mich mit anderen Usern vergleichen kann|
+|2|Muss|Funktional|Als Admin möchte ich Phrasen erstellen, ändern und löschen können, damit ich den Inhalt der App bearbeiten kann.|
+|3|Muss|Funktional|Als Spieler möchte ich Wörter und Fragen beantworten können, damit ich spielen kann.|
+|4|Muss|Funktional|Als Administrator möchte ich mich durch meinen Benutzernamen und mein Passwort authentifizieren können, damit ich auf die Administrator-Funktionen zugreifen kann.|
+|5|Muss|Funktional|Als Administrator möchte ich einzelne Einträge der Highscore-Liste löschen können, damit ich die Highscore-Liste aktuell halten und ungültige Einträge entfernen kann.|
 | ...  |                 |      |                                    |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
@@ -62,9 +61,11 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über den
 
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-|2.1|Applikation muss gestartet sein, ein Spiel gespielt und gewonnen| - | Highscore kann angeschaut werden|
-|3.1|Applikation gestartet, als Admin angemeldet| Phrase ändern| Phrase wurde geändert.|
+|1.1|Applikation gestartet, ein Spiel gespielt und gewonnen| - | Highscore kann angeschaut werden|
+|2.1|Applikation gestartet, als Admin angemeldet| Phrase ändern| Phrase wurde geändert.|
+|3.1|Applikation gestartet, Spiel starten | Phrase eingeben | Eingaben des Benutzers werden entgegengebnommen und angezeit |
+|4.1|Applikation gestartet im Header auf Admin klicken|Als Admin anmelden|Auf Adminseite weitergeleitet|
+|5.1|Applikation gestartet, als Admin eingeloggt|Aus Liste der Highscores einen anklicken und auf löschen drücken|Highscore wird gelöscht|
 | ...  |              |         |                   |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
@@ -105,6 +106,6 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über den
 
 # 10 Allgemeines
 
-- [ X ] Ich habe die Rechtschreibung überprüft
+- [ ] Ich habe die Rechtschreibung überprüft
 - [ ] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
 - [ ] Ich habe alle mit ✍️ markierten Teile ersetzt
