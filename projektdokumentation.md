@@ -106,6 +106,6 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über den
 
 # 10 Allgemeines
 
-- [ X ] Ich habe die Rechtschreibung überprüft
+- [ ] Ich habe die Rechtschreibung überprüft
 - [ ] Ich habe überprüft, dass die Nummerierung von Testfällen und User Stories übereinstimmen
 - [ ] Ich habe alle mit ✍️ markierten Teile ersetzt
