@@ -6,7 +6,7 @@
 | ----- | ------- | ------------------------------------------------------------ |
 |       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
 |05.02.2023| 1.0.0   |  Projekt erstellen und hochladen, ausbauen von Projektdokumentation|
-|    19.02.2023 1.0.1   |    Von clientseitig uf api routes gewechselt        |
+|    19.02.2023| 1.0.1   |    Von clientseitig uf api routes gewechselt        |
 |       | 0.0.4   |                                                              |
 |       | 0.0.5   |                                                              |
 |       | 0.0.6   |                                                              |
