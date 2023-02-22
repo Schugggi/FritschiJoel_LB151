@@ -1,30 +1,17 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-import getRandomWordObj from '../../src/api/getRandomWordObj.js'
-import { useState, useEffect } from 'react'
-
-
-
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import styles from "@/styles/Home.module.css";
+import { useState, useEffect } from "react";
 
 export default function Home() {
-
-  const [cnt, setCnt] = useState();
-  const [word, setWord] = useState();
-
-
-  async function fetchWord(){
-    return await getRandomWordObj()
-  }
+  const [word, setWord] = useState(null);
 
   useEffect(() => {
-    fetchWord().then(res => {
-      setWord(res)
-    })
-  }, [])
-
-  const bla = () => console.log(6)
+    fetch("/api/getRandomWord")
+      .then((res) => res.json())
+      .then((data) => setWord(data));
+  }, []);
 
   return (
     <>
@@ -38,21 +25,21 @@ export default function Home() {
           <div className={styles.wrapper}>
             <h1>Guess the word</h1>
             <div className={styles.content}>
-             
               <div className={styles.input}>
-              {word?.word.split("").map((val, i, arr) => 
-                <input type="text" disabled/>
-              )}
-                
+                {word &&
+                  Array.from(word.word).map((letter, i) => (
+                    <input type="test" value={letter} key={i} disabled />
+                  ))}
+
                 <div className={styles.details}>
                   <p className={styles.hint}>Hint</p>
                 </div>
-                <button className={styles.resetBtn} >Reset Game</button>
+                <button className={styles.resetBtn}>Reset Game</button>
               </div>
             </div>
           </div>
         </div>
       </main>
     </>
-  )
+  );
 }
