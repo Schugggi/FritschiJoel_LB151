@@ -1,4 +1,4 @@
-import wordList from '/src/js/words.js'
+import wordList from '/src/api/words.js'
 
 const words = wordList()
 
