@@ -42,3 +42,44 @@
 .content .details{
     margin: 20px 0 25px;
 }
+
+.header {
+    overflow: hidden;
+    background-color: gray;
+    border-radius: 2vh;
+    border-color: black;
+    border: 1px solid;
+    display: flex;
+    padding: 2vh;
+}
+
+.header p{
+    align-items: flex-start;
+}
+
+.header p.logo{
+    font-size: 3vh;
+    font-weight: 700;
+}
+
+.links:hover{
+    background-color: white;
+    color: black;
+}
+
+.header .headerright{
+    margin-left: auto;
+    align-content: flex-end;
+    vertical-align: text-bottom;
+    align-items: center;
+    display: flex;
+}
+
+.headerright .links{
+    font-size: 2vh;
+    padding: 2vh;
+    border: 1px solid;
+    border-radius: 2vh;
+    cursor: pointer;
+    margin-right: 1vh;
+}

@@ -21,6 +21,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
+        
+        <div className={styles.header}>
+          <p className={styles.logo}>Gücksrad</p>
+          <div className={styles.headerright}>
+            <a className={styles.links}>Home</a>
+            <a className={styles.links}>Admin</a>
+          </div>
+        </div>
+
+
         <div className={styles.gameWrapper}>
           <div className={styles.wrapper}>
             <h1>Guess the word</h1>
