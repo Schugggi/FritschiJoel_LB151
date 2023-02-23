@@ -30,13 +30,13 @@
 }
 
 .input input{
-    height: 57px;
-    width: 56px;
-    margin: 4px;
-    border: 1px solid #ccd;
+    height: 6.5vh;
+    width: 6vh;
+    margin: 0.3vh;
     background: white;
     font-size: 24px;
     text-align: center;
+    font-weight: 500;
 }
 
 .content .details{
@@ -62,7 +62,7 @@
 }
 
 .links:hover{
-    background-color: #cccccc;
+    background-color: #c4c4c4;
     color: black;
 }
 
@@ -78,7 +78,7 @@
     background-color: #747373;
     font-size: 2vh;
     padding: 2vh;
-    border-radius: 2vh;
+    border-radius: 1vh;
     cursor: pointer;
     margin-right: 1vh;
     color: white;   
