@@ -2,18 +2,18 @@
 
 ## Getting Started
 
-###Node.Js Version:
+### Node.Js Version:
 
 ```
 Node.js v16.16.0.
 ```
 
-###Install the packages with:
+### Install the packages with:
 ```
 npm install
 ```
 
-###Run the development server:
+### Run the development server:
 
 ```bash
 npm run dev
