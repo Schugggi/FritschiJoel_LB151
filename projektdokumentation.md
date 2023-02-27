@@ -62,7 +62,6 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über Firestore Funktionen
 
 # 5 Prototyp
 
-![alt text](https://github.com/Schugggi/FritschiJoel_LB151/master/Mockup_GUI.PNG)
 
 # 6 Implementation
 
