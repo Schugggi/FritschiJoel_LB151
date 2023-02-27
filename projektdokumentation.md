@@ -4,13 +4,12 @@
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
 |05.02.2023| 1.0.0   |  Projekt erstellen und hochladen, ausbauen von Projektdokumentation|
-|    19.02.2023| 1.0.1   |    Von clientseitig uf api routes gewechselt        |
-|       | 0.0.4   |                                                              |
-|       | 0.0.5   |                                                              |
-|       | 0.0.6   |                                                              |
-|       | 1.0.0   |                                                              |
+| 06.02.2023| 1.0.1   |    Anfang vom Coden, Spiel       |
+|   13.02.2023   | 1.0.2   |   Inputs werden generiert, aber Clientseitig     |       | 0.0.5   |                                                              |
+|   20.02.2023    | 1.0.3   |      Von Clientseitig auf API Routes gewechselt          |
+|   24.02.2023    | 1.0.4   |         Admin Seite erstellt         |
+|   26.02.2023    | 1.0.5   |         Letzte änderungen         |
 
 # 0 Ihr Projekt
 
@@ -38,13 +37,9 @@
 
 ✍️ Wie steuern Sie Ihre Datenbank an? Wie ist das Interface aufgebaut? 
 
-Da ich als Datenkbank Firestore verwende, greiffe ich über den 
+Da ich als Datenkbank Firestore verwende, greiffe ich über Firestore Funktionen auf die Datenbank zu und lese von da Rätselwörter aus.
 
 # 4.1 User Stories
-
-✍️ Formulieren Sie klare Anforderungen in der Form von User Stories (*„als … möchte ich … damit …“*) und zu jeder Anforderung mindestens einen dazugehörigen Testfall (in Kapitel 4.2). 
-
-✍️ Formulieren Sie weitere, eigene Anforderungen und Testfälle, wie Sie Ihre Applikation erweitern möchten. Geben Sie diesen statt einer Nummer einen Buchstaben (`A`, `B`, etc.)
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
@@ -53,22 +48,17 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über den
 |3|Muss|Funktional|Als Spieler möchte ich Wörter und Fragen beantworten können, damit ich spielen kann.|
 |4|Muss|Funktional|Als Administrator möchte ich mich durch meinen Benutzernamen und mein Passwort authentifizieren können, damit ich auf die Administrator-Funktionen zugreifen kann.|
 |5|Muss|Funktional|Als Administrator möchte ich einzelne Einträge der Highscore-Liste löschen können, damit ich die Highscore-Liste aktuell halten und ungültige Einträge entfernen kann.|
-| ...  |                 |      |                                    |
+| 6  |   Muss    |   Funktional   |  Als Spieler möchte ich Buchstaben eingeben können damit ich raten kann |
+|7|Muss|Funktional|Als Spieler möchte ich meinen eingegebenen Buchstaben checken können, damit ich sehe ob ich richtig geraten habe.|
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc. oder Zahl), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). 
 
 # 4.2 Testfälle
 
 | TC-№ | Vorbereitung | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
 |1.1|Applikation gestartet, ein Spiel gespielt und gewonnen| - | Highscore kann angeschaut werden|
-|2.1|Applikation gestartet, als Admin angemeldet| Phrase ändern| Phrase wurde geändert.|
-|3.1|Applikation gestartet, Spiel starten | Phrase eingeben | Eingaben des Benutzers werden entgegengebnommen und angezeit |
-|4.1|Applikation gestartet im Header auf Admin klicken|Als Admin anmelden|Auf Adminseite weitergeleitet|
-|5.1|Applikation gestartet, als Admin eingeloggt|Aus Liste der Highscores einen anklicken und auf löschen drücken|Highscore wird gelöscht|
-| ...  |              |         |                   |
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
+|6.1|Applikation gestartet|Buchstabe|Buchstabe kann eingegeben werden|
+|7.1|Applikation gestartet|Buchstabe eingegeben, Button Guess drücken| Wenn Buchstabe richtig, wird Buchstabe angezeigt, wenn buchstabe falsch wird nicht angezeigt|
 
 # 5 Prototyp
 
@@ -80,25 +70,31 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über den
 
 | User Story | Datum | Beschreibung |
 | ---------- | ----- | ------------ |
-| ...        |       |              |
+| 1        |    13.02.2023   |   Programmieren des Spiels  |
+|6|13.02.2023|Input Feld beidem nur 1 Buchstabe eingegeben werden kann|
+|7|13.02.2023|Button um eingegebener Buchstabe zu überprüfen|
 
 # 7 Projektdokumentation
 
 | US-№ | Erledigt? | Entsprechende Code-Dateien oder Erklärung |
 | ---- | --------- | ----------------------------------------- |
-| 1    | ja / nein |                                           |
-| ...  |           |                                           |
+| 1    | Nein |    index.js, gameHandler.js, wordList.js        |
+| 6  |    Ja       |   index.js          |
+| 7  |    Ja       |   index.js, gameHanderl.js          |
 
 # 8 Testprotokoll
 
 ✍️ Fügen Sie hier den Link zu dem Video ein, welches den Testdurchlauf dokumentiert.
+https://youtu.be/TX-9J__MXWo
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  |   27.02.2023    |   n.O.k, Spiel kann nicht gewonnen werden und Highscoreliste existiert nicht.       |  Joel Fritschi      |
+| 6.1  |   27.02.2023    |    O.k.      |   Joel Fritschi     |
+|7.1|27.02.2023|O.k.|Joel Fritschi|
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+## Fazit:
+Es wurden definitiv nicht alle nötigen Grundfunktionen implemenentiert damit die Applikation als Prototyp gebraucht werden könnte. Die Applikation kann so nicht dem Kunden übergeben werden und benötigt definiti mehr Zeit in der Entwicklung.
 
 # 9 `README.md`
 
