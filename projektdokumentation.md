@@ -62,6 +62,8 @@ Da ich als Datenkbank Firestore verwende, greiffe ich über Firestore Funktionen
 
 # 5 Prototyp
 
+![Mockup_GUI](https://user-images.githubusercontent.com/95489210/221524369-820f4930-aeea-44f5-b8ec-22545fcfc930.PNG)
+
 
 # 6 Implementation
 
