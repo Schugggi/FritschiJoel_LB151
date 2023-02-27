@@ -4,7 +4,9 @@
 
 First, install the packages with:
 
+```
 npm install
+```
 
 First, run the development server:
 
